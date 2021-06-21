@@ -1,0 +1,186 @@
+@font-face{
+    font-family: cyberpunkRegular;
+    src: url(../font/Cyberpunk-Regular.ttf);
+}
+
+@font-face{
+    font-family: cybrpnuk2;
+    src: url(../font/Cybrpnuk2.ttf);
+}
+
+@font-face{
+    font-family: scriptsoftRegular;
+    src: url(../font/ScriptsoftRegular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    filter: brightness(98%);
+}
+
+a{
+    color: #ffffff;
+}
+
+address{
+    font-size: 1.8rem;
+}
+
+address p{
+    font-family: cybrpnuk2;
+    margin: 0rem;
+}
+
+article{
+    font-family: scriptsoftRegular;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+article a{
+    color: #ed17c5;
+}
+
+body{
+    background-color: rgb(21,21,21);
+    font-family: scriptsoftRegular;
+    color: #ffffff;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(21,21,21);
+    z-index: 9999;
+}
+
+h1{
+    font-family: cyberpunkRegular;
+    font-size: 5rem;
+    color: #ed17c5;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-family: cybrpnuk2;
+    font-size: 2.2rem;
+    margin: 2rem;
+    margin-top: 1rem;
+    background-color:#ed17c5;
+    color: rgb(21,21,21);
+}
+
+h3{
+    font-size: 2rem;
+    font-variant: small-caps;
+    margin: 1rem;
+}
+
+img{
+    margin: 1rem;
+    display: inline;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav{
+    font-size: 1.8rem;
+}
+
+nav ul{
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+nav ul li {
+    position: relative;
+    padding: 0.1rem 0.5rem;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #ed17c5;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+nav ul li:hover::before{
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+nav ul li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #ed17c5;
+    transform: scaleY(0);
+    transition: transform 0.6s;
+    transform-origin: bottom;
+    filter: blur(30px);
+}
+
+nav ul li:hover::after{
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+section{
+    display: relative;
+    text-align: center;
+    padding: 1rem;
+}
+
+section p{
+    margin-bottom: 1rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.prev_next{
+    display: none;
+    cursor: pointer;
+    background:white;
+    color:rgb(21,21,21);
+    font-size: 1rem;
+    padding: 0.375rem;
+    font-family: cybrpnuk2;
+}
+
+#map{
+    width: 30rem;
+    height: 30rem;
+}

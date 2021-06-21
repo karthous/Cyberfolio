@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cyberfolio</title>
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/campingSites.js"></script>
+        <script src="js/gallery.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul id="nav">
+                    <li>
+                        <a href="#">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#documentationAndReflectionOfAssessments">Documentation and Reflection of Assessments</a>
+                    </li>
+                    <li>
+                        <a href="#reflectionOfCourse">Reflection of Course</a>
+                    </li>
+                    <li>
+                        <a href="#otherWork">Other Work</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <section id="aboutMe">
+                <div class="container">
+                    <h1>About Me</h1>
+                </div>
+                <div class="container">
+                    <img src="img/jiyunMei.png" alt="Jiyun Mei in white with glasses">
+                </div>
+                <p>Jiyun Mei</p>
+                <article>
+                    This page is created by Jiyun Mei, a current student from The University of Queensland (UQ). 
+                    Graduated from the University of Nottingham in 2019 with a Bachelor's Degree in International Business and Economics, he is currently enrolled in UQ's program of Master of Information Technology. 
+                    He is interested in data, artificial intelligence, and variety of chess, and he was a president of a chess club 4 years ago. 
+                    He always uses his positive attitude to encourage his mates during collaboration.
+                    In his spare time, he enjoys playing chess with his friends.
+                </article>
+                <h2>Contact</h2>
+                <address>
+                    <h3>Email</h3>
+                    <a href="mailto:karthous@outlook.com">karthous@outlook.com</a><br>
+                    <h3>Phone</h3>
+                    (+61) 0403384000<br>
+                </address>
+            </section>
+            <section id="documentationAndReflectionOfAssessments">
+                <div class="container">
+                    <h1>Assessments</h1>
+                </div>
+                <section>
+                    <h2>Design Exploration</h2>
+                    <article>
+                        In this stage, I explored the government's datasets by searching the datasets with some keywords, and I got the idea of "School Information". 
+                        The posters of my idea are shown below.
+                    </article>
+                    <div class="container">
+                        <img src="img/poster.png" alt="The poster shows how to use the website, the aim and the intended audience of the site">
+                    </div>
+                    <p>Poster 1</p>
+                    <div class="container">
+                        <img src="img/poster2.png" alt="Persona of an intended user.">
+                    </div>    
+                    <p>Poster 2</p>
+                    <article>
+                        In addition, I practised my design skills with exercises. 
+                        An example of my works is shown below.
+                    </article>
+                    <div class="container">
+                        <img src="img/monster.png" alt="A monster image created by myself with Adobe Illustrator.">
+                    </div>
+                    <p>An example of my work</p>
+                </section>
+                <section>
+                    <h2>Major Project</h2>
+                    <h3>Project Management</h3>
+                    <article>
+                        I was responsible for managing the <a href="https://github.com/karthous/DECO7180">GitHub repository of our group</a>, and I arranged for our group meetings.
+                        We had online meetings at least twice a week (with Discord), and used Google Drive to store the documents for our meeting.
+                    </article>
+                    <div class="container">
+                        <img src="img/meetingNote.png" alt="My Note for MVP">
+                    </div>    
+                    <p>A screenshot of my discussion note</p>
+                    <h3>Part A</h3>
+                    <article>
+                        In part A, I finished the "Plan for completion" section of our <a href="https://drive.google.com/file/d/1sDE1MjnoKk-YZQx_76Hw0_dFyFSlDodi/view?usp=sharing">team concept</a>.
+                        Additionally, I created our <a href="https://drive.google.com/file/d/1UumHUp2ZRXcAKKAYXLp0TbBqIkqZGlR-/view?usp=sharing">work plan</a> individually.
+                    </article>
+                    <div class="container">
+                        <img src="img/workPlan.png" alt="Workplan with events and dates.">
+                    </div>
+                    <p>Screenshot of our workplan</p>
+                    <h3>Part B</h3>
+                    <article>
+                        In part B, I finished the maps on our <a href="https://deco7180teams-pfc02t06.uqcloud.net/reserves.html">reserves page</a> and <a href="https://deco7180teams-pfc02t06.uqcloud.net/campingSites.html">campsites page</a> individually with <a href="https://data.gov.au/">the government's API</a>, <a href="https://leafletjs.com/">leaflet.js</a>, and <a href="https://terraformer-js.github.io/">terraformer.js</a>.
+                        Leaflet is used to show the geojson data on the map. 
+                        As some of the data from the government's datasets are in format of well-know text instead of geojson, Terraformer is used to convert well-known text data to genjson data. 
+                        With the map, we can obtain the information about the name, location, and website of a destination if the information is provided by the government's dataset.
+                        If the information is not provided, it will show that the information is unknown.
+                        Besides, I did the presentation with one of my teammates.
+                    </article>
+                    <div class="container">
+                        <img src="img/map.png" alt="">
+                    </div>
+                    <p>Screenshot of a map on our pages</p>
+                    <h3>Part C</h3>
+                    <article>
+                        In part C, I finished the maps on our <a href="https://deco7180teams-pfc02t06.uqcloud.net/skateparks.html">skateparks page</a> and <a href="https://deco7180teams-pfc02t06.uqcloud.net/gardens.html">gardens page</a> individually with the same technology used in part B.
+                        I managed to upload all our files (with FileZilla) to uqcloud by remotely accessing UQ lab's computer (with mRemoteNG), and got all the pages work before the trade show.
+                        In the trade show, I was responsible for introducing our interactive maps to our audience in the trade show as one of the presenters.
+                    </article>
+                    <section class="container">
+                        <article id="map">
+                        </article>
+                    </section>
+                    <p>An interactive map used on our campsites page</p>
+                </section>
+                <section>
+                    <h2>Participation and Journaling</h2>
+                    <article>
+                        I participated in all the workshops as well as all the contacts and completed all the four journals. 
+                        The journals helped me to reflect on my study.
+                    </article>
+                    <div class="container">
+                        <img src="img/journal.png" alt="The first Journal with one of its attached figure.">
+                    </div>
+                    <p>Screenshot of one of my journals</p>
+                </section>
+                <section>
+                    <h2>Portfolio</h2>
+                    <article>
+                        In this stage, I created this page with HTML, CSS, and JavaScript.
+                        It was named as Cyberfolio, because this page applied the cyberpunk style and it was used for my portfolio. 
+                        To style this page, I researched the knowledge about cyberpunk and carefully selected the colors and fonts.
+                        Three external free fonts ("Cyberpunk-Regular.ttf", "Cybrpnuk2.ttf", and "ScriptsoftRegular.ttf") were imported.
+                        The web accessibility of this page had been checked by WAVE (powered by WebAIM).
+                        If more time is given, I would improve the design and add more interactive elements to this page.
+                    </article>
+                    <div class="container">
+                        <img src="img/future.jpg" alt="Shanghai's night view(it is photographed by myself, and modified with PHOTOMOSH)">
+                    </div>
+                    <p>An abandoned design (background image of this page)</p>
+                </section>
+            </section>
+            <section id="reflectionOfCourse">
+                <div class="container">
+                    <h1>Course</h1>
+                </div>
+                <article>
+                    The original expectation I wrote in my first journal was met. 
+                    I learned Adobe Illustrator, JSON, PHP, and project management from this course, while the original expectation only includes learning Adobe Illustrator and JSON. 
+                    As I progressed in the course, I found that this course is more than a course teaching team collaboration and how to use API.
+                    It helps me in many aspects.
+                    For example, with what I learned from this course, I made great contribution to our team in another course: Design Computing Studio 3 - Build (DECO7381). 
+                    Examples of the works benefited from this course are listed in the section "Other Work".
+                    I was happy to see the layout of the Blackboard assessment page was modified after we sent the feedback about it.
+                    I think the course would be increasingly better if it keeps improving by the feedback from students.
+                </article>
+            </section>
+            <section id="otherWork">
+                <div class="container">
+                    <h1>Other Work</h1>
+                </div>
+                <article>
+                    Here are some examples of the works benefited from this course.
+                </article>
+                <div>
+                    <a class="prev_next" onclick="changeSlides(-1)">Previous</a>
+                </div>
+                <div class="container">
+                    <div class="slide">
+                        <img src="img/cute.png" alt="A cute girl.">
+                        <p>A female character for DECO7381's project, included in the final product.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/strong.png" alt="A strong boy.">
+                        <p>A male character for DECO7381's project, included in the final product.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/collaredShirtKarsus.png" alt="A purple shirt with Karsus's Logo.">
+                        <p>A component (collared shirt) of a character for DECO7381's project, included in the final product.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/wink.gif" alt="A pair of blinking eyes.">
+                        <p>A component (blinking eyes) of a character for DECO7381's project, not applied in the final product.</p>
+                    </div>
+                </div>
+                <div>
+                    <a class="prev_next" onclick="changeSlides(1)">Next</a>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>© 2020 Jiyun Mei. All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
+    
